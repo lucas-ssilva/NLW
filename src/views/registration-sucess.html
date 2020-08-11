@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width='device-width', initial-scale=1.0">
+    <title>Proffy | Sua plataforma de estudos online</title>
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="/styles/partials/registration-sucess.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@200;400;600&amp;display=swap"
+     rel="stylesheet">
+</head>
+
+<body id="registration-sucess">
+    <div id="container">
+        <img src="/images/success-background.svg" alt="imagem de sucesso" class="img-background">
+    </div>
+     <div id="Content">
+        <img src="/images/icons/success-check-icon.svg" alt="" class="img-check">
+        <h1>Cadastro salvo!</h1>
+        <p>Tudo certo, seu cadastro está na nossa lista de professores.</p>
+        <p>Agora é só ficar de olho no seu Whatsapp.</p>
+    </div> 
+    <script>
+        var query = window.location.search
+        setTimeout(() => {
+            location.href="http://127.0.0.1:5500/study" + query;
+        }, 2000)
+    </script>
+</body>
+</html>

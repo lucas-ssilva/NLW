@@ -1,0 +1,284 @@
+:root {
+    --color-background: #F0F0F7;
+    --color-primary-lighter: #9871F5;
+    --color-primary-light: #916BEA;
+    --color-primary: #8257E5;
+    --color-primary-dark: #774DD6;
+    --color-primary-darker: #6842c2;
+    --color-secondary: #04d361;
+    --color-secondary-dark: #04BF58;
+    --color-title-in-primary: #FFFFFF;
+    --color-text-in-primary: #D4C2FF;
+    --color-text-title: #32264D;
+    --color-text-complement: #9C98A6;
+    --color-text-base: #6A6180;
+    --color-line-in-white: #E6E6F0;
+    --color-input-background: #F8F8FC;
+    --color-button-text: #FFFFFF;
+    --color-box-base: #FFFFFF;
+    --color-box-footer: #FAFAFC;
+    --color-small-info: #C1BCCC;
+    font-size: 60%; /* controle das medidas rem, tamanho padrão 16px 100% 1rem  */
+}
+
+#registration-sucess {
+    background: var(--color-primary);
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#registration-sucess #container{
+    width: 90vw;
+    height: 90vh;
+    max-width: 1400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#registration-sucess #container .img-background {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+
+#registration-sucess #Content img {
+    width: 6rem;
+    height: 6rem;
+    position: absolute;
+    right: 50%;
+    left: 44%;
+    top: 23rem;
+    display: block;
+    
+}
+
+#registration-sucess #Content h1 {
+    color: var(--color-title-in-primary) ;
+    font: 700 2.0rem Archivo;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 20%;
+    left: 20%;
+    top: 30rem;
+}
+
+#registration-sucess #Content h1+p {
+    color: var(--color-title-in-primary) ;
+    font: 400 1rem Archivo;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.6rem;
+    position: absolute;
+    right: 20%;
+    left: 20%;
+    top: 35rem;
+    text-align: center;
+}
+
+@media (min-width: 700px) {
+    #registration-sucess #Content img {
+        width: 6rem;
+        height: 6rem;
+        position: absolute;
+        right: 50%;
+        left: 45%;
+        top: 23rem;
+        display: block;
+    }
+}
+
+#registration-sucess #Content p+p {
+    color: var(--color-title-in-primary) ;
+    font: 400 1rem Archivo;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.6rem;
+    position: absolute;
+    right: 20%;
+    left: 20%;
+    top: 39rem;
+    text-align: center;
+}
+
+@media (min-height: 700px ) { 
+    #registration-sucess #Content img {
+        width: 6rem;
+        height: 6rem;
+        position: absolute;
+        right: 50%;
+        left: 40%;
+        top: 30rem;
+        display: block;
+        
+    }
+    
+    #registration-sucess #Content h1 {
+        color: var(--color-title-in-primary) ;
+        font: 700 2.0rem Archivo;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        right: 20%;
+        left: 20%;
+        top: 36rem;
+    }
+    
+    #registration-sucess #Content h1+p {
+        color: var(--color-title-in-primary) ;
+        font: 400 1rem Archivo;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 1.6rem;
+        position: absolute;
+        right: 20%;
+        left: 20%;
+        top: 40rem;
+        text-align: center;
+    }
+    
+    #registration-sucess #Content p+p {
+        color: var(--color-title-in-primary) ;
+        font: 400 1rem Archivo;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 1.6rem;
+        position: absolute;
+        right: 20%;
+        left: 20%;
+        top: 43rem;
+        text-align: center;
+    }
+    
+}
+
+@media (min-width: 1000px ) { 
+    #registration-sucess #Content img {
+        width: 12rem;
+        height: 12rem;
+        position: absolute;
+        right: 50%;
+        left: 45%;
+        top: 15rem;
+        display: block;
+        
+    }
+    
+    #registration-sucess #Content h1 {
+        color: var(--color-title-in-primary) ;
+        font: 700 3.6rem Archivo;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        right: 20%;
+        left: 20%;
+        top: 30rem;
+    }
+    
+    #registration-sucess #Content h1+p {
+        color: var(--color-title-in-primary) ;
+        font: 400 2rem Archivo;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 1.6rem;
+        position: absolute;
+        right: 20%;
+        left: 20%;
+        top: 37rem;
+        text-align: center;
+    }
+    
+    #registration-sucess #Content p+p {
+        color: var(--color-title-in-primary) ;
+        font: 400 2rem Archivo;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 1.6rem;
+        position: absolute;
+        right: 20%;
+        left: 20%;
+        top: 40rem;
+        text-align: center;
+    }
+}
+
+@media (min-width: 1200px ) { 
+    #registration-sucess #Content img {
+        width: 15rem;
+        height: 15rem;
+        position: absolute;
+        right: 50%;
+        left: 45%;
+        top: 20rem;
+        display: block;
+        
+    }
+    
+    #registration-sucess #Content h1 {
+        color: var(--color-title-in-primary) ;
+        font: 700 5.0rem Archivo;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        right: 20%;
+        left: 20%;
+        top: 36rem;
+    }
+    
+    #registration-sucess #Content h1+p {
+        color: var(--color-title-in-primary) ;
+        font: 200 2.0rem Poppins;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 1.6rem;
+        position: absolute;
+        right: 20%;
+        left: 20%;
+        top: 44rem;
+        text-align: center;
+    }
+    
+    #registration-sucess #Content p+p {
+        color: var(--color-title-in-primary) ;
+        font: 200 2.0rem Poppins;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 1.6rem;
+        position: absolute;
+        right: 20%;
+        left: 20%;
+        top: 48rem;
+        text-align: center;
+    }
+}
+
+
+
+
+

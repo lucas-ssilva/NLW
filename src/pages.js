@@ -1,10 +1,17 @@
 const { subjects, weekdays, getSubject, convertHoursToMinutos } = require('./database/utils/format')
 const Database = require('./database/db')
 
+queryString:String;
+
 //funcionalidades
 function pageLanding(req, res) {
     return res.render("index.html")
 }
+
+function registration(req, res) {
+    return res.render("registration-sucess.html")
+}
+
 async function pageStudy(req, res) {
     const filters = req.query
 
@@ -76,20 +83,25 @@ async function saveClasses(req, res) {
         const db = await Database
         await createProffy(db, {proffyValue, classValue,classScheduleValue })
         //caso os dados sejam adicionados direciona para a tela study
-        let queryString = "?subject=" + req.body.subject
+        queryString = "?subject=" + req.body.subject
         queryString += "&weekday=" + req.body.weekday[0]
         queryString += "&time=" + req.body.time_from[0]
-
-        return res.redirect("/study/" + queryString)
+        return res.redirect("/registration-sucess/" + queryString)
     } catch (error) {
         console.log(error)
     }
 
 }
 
+/* function teste(res) {
+    setTimeout(3000, res.redirect("/study/" + queryString));
+} */
+
 module.exports = {
     pageLanding,
     pageStudy,
     pageGiveClasses,
-    saveClasses
+    saveClasses,
+    registration
+
 }
